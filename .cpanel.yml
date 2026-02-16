@@ -1,0 +1,7 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home4/thedivi1/mohit.gyantheangelicguidance.com
+    - /bin/mkdir -p $DEPLOYPATH
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp -R assets $DEPLOYPATH 2>/dev/null || :
